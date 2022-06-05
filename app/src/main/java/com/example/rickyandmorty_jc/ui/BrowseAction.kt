@@ -1,4 +1,4 @@
-package com.example.rickyandmorty_jc.ui.screens.main
+package com.example.rickyandmorty_jc.ui
 
 import com.example.rickyandmorty_jc.data.models.Character
 
@@ -7,5 +7,6 @@ sealed class BrowseAction {
 }
 
 data class CharactersState(
-    val characters: List<Character> = emptyList()
+    val characters: List<Character> = emptyList(),
+    val selectedProfile: Character.Profile? = null,
 )

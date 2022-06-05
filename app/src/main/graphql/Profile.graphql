@@ -1,0 +1,20 @@
+query Profile($id: ID!) {
+    character(id: $id) {
+        id,
+        name,
+        status,
+        species,
+        gender,
+        origin {
+            id,
+            name,
+            dimension
+        },
+        location{
+            id,
+            name,
+            dimension
+        },
+        image
+    }
+}
