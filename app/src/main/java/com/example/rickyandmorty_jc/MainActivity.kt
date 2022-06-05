@@ -10,21 +10,19 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.rickyandmorty_jc.ui.RickAndMortyApp
 import com.example.rickyandmorty_jc.ui.theme.RickyAndMorty_JCTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             RickyAndMorty_JCTheme {
+                RickAndMortyApp()
             }
         }
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    RickyAndMorty_JCTheme {
-    }
-}

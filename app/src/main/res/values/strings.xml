@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RickyAndMorty_JC</string>
+    <string name="label_choose_a_character">Choose a Character</string>
 </resources>
