@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">RickyAndMorty_JC</string>
     <string name="label_choose_a_character">Choose a Character</string>
+    <string name="label_origin">Origin: %1$s</string>
+    <string name="label_species">Species: %1$s</string>
+    <string name="label_status">Status: %1$s</string>
+    <string name="label_gender">Gender: %1$s</string>
 </resources>

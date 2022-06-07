@@ -4,30 +4,30 @@ import com.example.CharactersQuery
 import com.example.ProfileQuery
 
 fun CharactersQuery.Result.toDomain() = Character(
-    id = id,
-    name = name,
-    image = image,
+    id = id.toString(),
+    name = name.toString(),
+    image = image.toString(),
 )
 
 fun ProfileQuery.Character.toDomain() = Character.Profile(
-    id = id,
-    name = name,
-    image = image,
-    status = status,
-    species = species,
-    gender = gender,
+    id = id.toString(),
+    name = name.toString(),
+    image = image.toString(),
+    status = status.toString(),
+    species = species.toString(),
+    gender = gender.toString(),
     origin = origin?.toDomain(),
     location = location?.toDomain(),
 )
 
 fun ProfileQuery.Origin.toDomain() = Character.Origin(
-    id = id,
-    name = name,
-    dimension = dimension
+    id = id.toString(),
+    name = name.toString(),
+    dimension = dimension.toString()
 )
 
 fun ProfileQuery.Location.toDomain() = Character.Location(
-    id = id,
-    name = name,
-    dimension = dimension
+    id = id.toString(),
+    name = name.toString(),
+    dimension = dimension.toString()
 )
